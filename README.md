@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="assets/terminal.gif" alt="Animated terminal banner: Xeyzen7959 — hardware, software, questionable sleep schedule" width="100%" />
+  <img src="assets/terminal.gif" alt="Animated terminal banner: Xeyzen7959 — hardware, software" width="100%" />
 </p>
 
 <p align="center">
-  <samp>computer engineering @ BINUS · hardware meets software · i build shit</samp>
+  <samp>computer engineering @ BINUS</samp>
 </p>
 
 <p align="center">
