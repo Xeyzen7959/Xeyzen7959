@@ -1,5 +1,6 @@
 """Render GitHub's publicly visible contribution calendar using README settings."""
 import datetime as dt
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -129,7 +130,12 @@ def main():
         label = dt.date.fromisoformat(months[i][0]+'-01').strftime('%b %Y')
         svg.append(f'<text x="{x}" y="392" text-anchor="middle" font-size="10" fill="#8b949e">{label}</text>')
     svg.append(f'<text x="30" y="423" font-size="10" fill="#8b949e">Source: GitHub commit contributions · updated {today}</text></g></svg>')
-    (ROOT / 'assets/commit-performance.svg').write_text('\n'.join(svg))
+    image = '\n'.join(svg)
+    (ROOT / 'assets/commit-performance.svg').write_text(image)
+    version = hashlib.sha256(image.encode()).hexdigest()[:12]
+    readme = re.sub(r'src="assets/commit-performance\.svg(?:\?v=[a-zA-Z0-9-]+)?"',
+                    f'src="assets/commit-performance.svg?v={version}"', readme)
+    (ROOT / 'README.md').write_text(readme)
     print(f'Rendered {len(months)} months, {total:,} commits, {active} active days')
 
 if __name__ == '__main__':
