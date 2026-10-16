@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://pin.it/27pYIn5XO">
-    <img src="assets/banner.gif" alt="Animated Japanese-style snake artwork" width="100%" />
+  <a href="https://id.pinterest.com/pin/824792119278916784/">
+    <img src="assets/banner.jpg" alt="Persona artwork with a black, white, and red torn-paper design" width="100%" />
   </a>
 </p>
 
