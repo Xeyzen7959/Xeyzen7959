@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://id.pinterest.com/pin/824792119278916784/">
-    <img src="assets/banner.jpg" alt="Persona artwork with a black, white, and red torn-paper design" width="100%" />
+  <a href="https://id.pinterest.com/pin/654992339579021076/">
+    <img src="assets/dmc-banner.jpg" alt="Devil May Cry logo in red on a black background" width="100%" />
   </a>
 </p>
 
