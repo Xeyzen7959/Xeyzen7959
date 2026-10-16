@@ -134,9 +134,6 @@ def main():
     (ROOT / 'assets/commit-performance.svg').write_text(image)
     version = hashlib.sha256(image.encode()).hexdigest()[:12]
     filename = f'commit-performance-{version}.svg'
-    for old in (ROOT / 'assets').glob('commit-performance-*.svg'):
-        if re.fullmatch(r'commit-performance-[0-9a-f]{12}\.svg', old.name) and old.name != filename:
-            old.unlink()
     (ROOT / 'assets' / filename).write_text(image)
     readme = re.sub(r'src="assets/commit-performance(?:-[0-9a-f]{12})?\.svg(?:\?v=[a-zA-Z0-9-]+)?"',
                     f'src="assets/{filename}"', readme)
