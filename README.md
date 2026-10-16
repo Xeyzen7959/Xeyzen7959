@@ -25,3 +25,9 @@ Computer Engineering undergraduate at **BINUS University**. I work on embedded s
 - **[RelayDesk](https://github.com/Xeyzen7959/Relay-Desk)** — Customer-support demo with simulated AI answers, knowledge-base citations, and human handoff.
 - **[ESPION](https://github.com/Xeyzen7959/ESPION)** — C++ project.
 - **[Automatic AI Attendance Taker](https://github.com/Xeyzen7959/Automatic-Ai-Attendance-Taker)** — Attendance system project.
+
+### Connect with me
+
+<a href="https://discord.com/users/1007608268534849636">
+  <img src="https://img.shields.io/badge/Discord-%40gesneriana-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Connect with @gesneriana on Discord" />
+</a>
