@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/contributions.svg
+          git add assets/commit-performance.svg
           if [ -f assets/private-commit-counts.json ]; then git add assets/private-commit-counts.json; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh contribution graph'

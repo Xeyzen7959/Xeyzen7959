@@ -38,7 +38,7 @@ Computer Engineering undergraduate at **BINUS University**. I work on embedded s
 }
 -->
 
-<img src="assets/contributions.svg" alt="Monthly GitHub commit performance from 2023 to today" width="100%" />
+<img src="assets/commit-performance.svg" alt="Monthly GitHub commit performance from 2023 to today" width="100%" />
 
 <details>
 <summary>Customize this graph</summary>

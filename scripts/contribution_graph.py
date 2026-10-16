@@ -130,7 +130,7 @@ def main():
         label = dt.date.fromisoformat(months[i][0]+'-01').strftime('%b %Y')
         svg.append(f'<text x="{x}" y="392" text-anchor="middle" font-size="10" fill="#8b949e">{label}</text>')
     svg.append(f'<text x="30" y="423" font-size="10" fill="#8b949e">Source: GitHub commit contributions · updated {today}</text></g></svg>')
-    (ROOT / 'assets/contributions.svg').write_text('\n'.join(svg))
+    (ROOT / 'assets/commit-performance.svg').write_text('\n'.join(svg))
     print(f'Rendered {len(months)} months, {total:,} commits, {active} active days')
 
 if __name__ == '__main__':
