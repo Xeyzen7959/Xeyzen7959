@@ -23,8 +23,8 @@ Computer Engineering undergraduate at **BINUS University**. I work on embedded s
 
 - **[SerialScope](https://github.com/Xeyzen7959/SerialScope)** — Arduino serial monitor with live sensor plots and data export.
 - **[RelayDesk](https://github.com/Xeyzen7959/Relay-Desk)** — Customer-support demo with simulated AI answers, knowledge-base citations, and human handoff.
-- **[ESPION](https://github.com/Xeyzen7959/ESPION)** — C++ project.
-- **[Automatic AI Attendance Taker](https://github.com/Xeyzen7959/Automatic-Ai-Attendance-Taker)** — Attendance system project.
+- **[ESPION](https://github.com/Xeyzen7959/ESPION)** — ESP-32 C++ based flipper zero alternative.
+- **[Automatic AI Attendance Taker](https://github.com/Xeyzen7959/Automatic-Ai-Attendance-Taker)** — AI Facial Recognition Attendance system project.
 
 ### Connect with me
 
