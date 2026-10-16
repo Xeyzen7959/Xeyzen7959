@@ -33,11 +33,12 @@ Computer Engineering undergraduate at **BINUS University**. I work on embedded s
   "username": "Xeyzen7959",
   "start": "2023-01-01",
   "end": "today",
-  "accent": "#ef4444"
+  "accent": "#ef4444",
+  "includePrivate": true
 }
 -->
 
-<img src="assets/contributions.svg" alt="Monthly GitHub contribution performance from 2023 to today" width="100%" />
+<img src="assets/contributions.svg" alt="Monthly GitHub commit performance from 2023 to today" width="100%" />
 
 <details>
 <summary>Customize this graph</summary>
@@ -47,8 +48,9 @@ Edit the `contribution-graph-config` block in this README's source:
 - `start`: first date, in `YYYY-MM-DD` format.
 - `end`: `today` for ongoing updates, or a fixed `YYYY-MM-DD` date.
 - `accent`: the line color, as a hex value such as `#ef4444`.
+- `includePrivate`: include anonymized private commit counts (`true` or `false`).
 
-The chart rebuilds when this README changes and refreshes daily. You can also run **Actions → Update contribution graph → Run workflow**. It measures monthly public contributions, active days, and the busiest month; these are activity metrics, not a rating of code quality.
+The chart follows GitHub’s commit contribution counts, rather than all contribution types. It refreshes daily and when this README changes. Private commit counts through October 17, 2026 are saved as anonymized daily totals. To refresh future private commits automatically, add a `GH_STATS_TOKEN` Actions secret with access to the relevant repositories; otherwise daily updates cover public commits while preserving the private snapshot. You can also run **Actions → Update contribution graph → Run workflow**.
 
 </details>
 
