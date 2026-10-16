@@ -46,9 +46,9 @@ def main():
     end = today if cfg['end'] == 'today' else min(today, dt.date.fromisoformat(cfg['end']))
     if not dt.date(2008, 1, 1) <= start <= end:
         raise ValueError('Date range must start in 2008 or later and end after its start')
-    colors = cfg['colors']
-    if len(colors) != 5 or not all(re.fullmatch(r'#[0-9a-fA-F]{6}', c) for c in colors):
-        raise ValueError('colors must contain five hex colors from empty to busiest')
+    accent = cfg.get('accent', '#ef4444')
+    if not re.fullmatch(r'#[0-9a-fA-F]{6}', accent):
+        raise ValueError('accent must be a hex color')
     data = {}
     for year in range(start.year, end.year + 1):
         last = min(end, dt.date(year, 12, 31))
@@ -66,47 +66,51 @@ def main():
                 raise ValueError(f'Missing contribution count for {date}')
             count = int(count_match.group(1).replace(',', '')) if count_match else 0
             data[date] = (count, level)
-    years = list(range(start.year, end.year + 1))
-    height = 100 + len(years) * 159
-    total = sum(count for date, (count, _) in data.items() if start.isoformat() <= date <= end.isoformat())
-    svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="900" height="{height}" viewBox="0 0 900 {height}" role="img" aria-labelledby="title desc">',
-           '<title id="title">Contribution calendar</title>',
-           f'<desc id="desc">{username}, {start} to {end}, {total:,} GitHub-reported contributions.</desc>',
-           f'<rect width="900" height="{height}" rx="12" fill="#0d1117"/>',
-           '<g font-family="Arial, sans-serif" fill="#c9d1d9">',
-           '<text x="28" y="32" font-size="19" font-weight="600">Contribution activity</text>',
-           f'<text x="28" y="55" font-size="12" fill="#8b949e">{start} — {end} · {total:,} contributions</text>']
-    for index, year in enumerate(years):
-        y = 89 + index * 159
-        first = dt.date(year, 1, 1)
-        origin = first - dt.timedelta(days=(first.weekday() + 1) % 7)
-        stop = dt.date(year, 12, 31)
-        yearly = sum(count for date, (count, _) in data.items() if max(start, first).isoformat() <= date <= min(end, stop).isoformat())
-        svg.append(f'<text x="28" y="{y}" font-size="15" font-weight="600">{year}</text>')
-        svg.append(f'<text x="850" y="{y}" text-anchor="end" font-size="12" fill="#8b949e">{yearly:,} contributions</text>')
-        for month in range(1, 13):
-            week = (dt.date(year, month, 1) - origin).days // 7
-            svg.append(f'<text x="{58 + week * 15}" y="{y+21}" font-size="10" fill="#8b949e">{calendar.month_abbr[month]}</text>')
-        for row, label in [(1, 'Mon'), (3, 'Wed'), (5, 'Fri')]:
-            svg.append(f'<text x="28" y="{y+36+row*14}" font-size="9" fill="#8b949e">{label}</text>')
-        date = first
-        while date <= stop:
-            if start <= date <= end:
-                if date.isoformat() not in data:
-                    raise ValueError(f'Missing contribution day: {date}')
-                count, level = data[date.isoformat()]
-                x = 58 + ((date - origin).days // 7) * 15
-                cy = y + 27 + ((date.weekday() + 1) % 7) * 14
-                svg.append(f'<rect x="{x}" y="{cy}" width="12" height="11" rx="2" fill="{colors[level]}"><title>{date}: {count} contributions</title></rect>')
-            date += dt.timedelta(days=1)
-    bottom = height - 22
-    svg.append(f'<text x="28" y="{bottom}" font-size="10" fill="#8b949e">GitHub-reported activity · updated {today}</text>')
-    svg.append(f'<text x="704" y="{bottom}" font-size="10" fill="#8b949e">Less</text>')
-    for i, color in enumerate(colors):
-        svg.append(f'<rect x="{734+i*15}" y="{bottom-10}" width="12" height="11" rx="2" fill="{color}"/>')
-    svg.append(f'<text x="814" y="{bottom}" font-size="10" fill="#8b949e">More</text></g></svg>')
+    filtered = {date: count for date, (count, _) in data.items() if start.isoformat() <= date <= end.isoformat()}
+    total = sum(filtered.values())
+    active = sum(count > 0 for count in filtered.values())
+    months = []
+    current = start.replace(day=1)
+    while current <= end:
+        prefix = current.strftime('%Y-%m')
+        months.append((prefix, sum(v for d, v in filtered.items() if d.startswith(prefix))))
+        current = (current.replace(day=28) + dt.timedelta(days=4)).replace(day=1)
+    peak_month, peak = max(months, key=lambda m: m[1])
+    top = max(4, ((peak + 3) // 4) * 4)
+    x0, x1, y0, y1 = 65, 855, 187, 369
+    points = [(x0 + i*(x1-x0)/max(1,len(months)-1), y1-v/top*(y1-y0)) for i,(_,v) in enumerate(months)]
+    line = ' '.join(('M' if i==0 else 'L')+f'{x:.2f},{y:.2f}' for i,(x,y) in enumerate(points))
+    area = line + f' L{x1},{y1} L{x0},{y1} Z'
+    svg = ['<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" role="img" aria-labelledby="title desc">',
+           '<title id="title">GitHub performance — monthly contributions</title>',
+           f'<desc id="desc">Public activity for {username}, {start} through {end}. {total} contributions across {active} active days.</desc>',
+           '<defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="'+accent+'" stop-opacity="0.30"/><stop offset="100%" stop-color="'+accent+'" stop-opacity="0.01"/></linearGradient></defs>',
+           '<rect x="1" y="1" width="898" height="438" rx="14" fill="#0d1117" stroke="#272d36"/>',
+           '<g font-family="Arial,sans-serif" fill="#e6edf3">',
+           '<text x="30" y="36" font-size="18" font-weight="600">GitHub performance</text>',
+           f'<text x="870" y="35" text-anchor="end" font-size="11" fill="#8b949e">{start.strftime("%b %Y")} — {end.strftime("%b %Y")}</text>']
+    for x, label, value, sub in [(30,'CONTRIBUTIONS',f'{total:,}','public activity'),(320,'ACTIVE DAYS',str(active),'days with contributions'),(610,'PEAK MONTH',str(peak),peak_month)]:
+        svg += [f'<rect x="{x}" y="60" width="260" height="84" rx="8" fill="#11161d"/>',
+                f'<text x="{x+16}" y="80" font-size="10" letter-spacing="1.2" fill="#8b949e">{label}</text>',
+                f'<text x="{x+16}" y="112" font-size="26" font-weight="600">{value}</text>',
+                f'<text x="{x+16}" y="131" font-size="10" fill="#8b949e">{sub}</text>']
+    svg.append('<text x="30" y="171" font-size="11" fill="#8b949e">Monthly contributions</text>')
+    for i in range(5):
+        v = top*i/4
+        y = y1-(y1-y0)*i/4
+        svg += [f'<path d="M{x0},{y} H{x1}" stroke="#242b34" stroke-dasharray="3 5"/>',
+                f'<text x="53" y="{y+4}" text-anchor="end" font-size="10" fill="#8b949e">{int(v)}</text>']
+    svg += [f'<path d="{area}" fill="url(#fill)"/>',f'<path d="{line}" fill="none" stroke="{accent}" stroke-width="2.5" stroke-linejoin="round"/>']
+    for (month, value),(x,y) in zip(months,points):
+        svg.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="3" fill="{accent}" stroke="#0d1117" stroke-width="1"><title>{month}: {value} contributions</title></circle>')
+    indices = sorted(set([0,len(months)-1]+[i for i,(m,_) in enumerate(months) if m.endswith('-01')]))
+    for i in indices:
+        x,_ = points[i]
+        label = dt.date.fromisoformat(months[i][0]+'-01').strftime('%b %Y')
+        svg.append(f'<text x="{x}" y="392" text-anchor="middle" font-size="10" fill="#8b949e">{label}</text>')
+    svg.append(f'<text x="30" y="423" font-size="10" fill="#8b949e">Source: GitHub public contributions · updated {today}</text></g></svg>')
     (ROOT / 'assets/contributions.svg').write_text('\n'.join(svg))
-    print(f'Rendered {len(years)} years, {total:,} contributions, {start} to {end}')
+    print(f'Rendered {len(months)} months, {total:,} public contributions, {active} active days')
 
 if __name__ == '__main__':
     main()
