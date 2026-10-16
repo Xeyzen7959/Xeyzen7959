@@ -26,19 +26,19 @@ Computer Engineering undergraduate at **BINUS University**. I work on embedded s
 - **[ESPION](https://github.com/Xeyzen7959/ESPION)** — ESP-32 C++ based flipper zero alternative.
 - **[Automatic AI Attendance Taker](https://github.com/Xeyzen7959/Automatic-Ai-Attendance-Taker)** — AI Facial Recognition Attendance system project.
 
-### GitHub performance
+### @Xeyzen7959's commit performace
 
 <!-- contribution-graph-config
 {
   "username": "Xeyzen7959",
-  "start": "2023-01-01",
+  "start": "2025-04-16",
   "end": "today",
   "accent": "#ef4444",
   "includePrivate": true
 }
 -->
 
-<img src="assets/commit-performance.svg" alt="Monthly GitHub commit performance from 2023 to today" width="100%" />
+<img src="assets/commit-performance.svg" alt="Monthly GitHub commit performance from April 2025 to today" width="100%" />
 
 ### Connect with me
 
