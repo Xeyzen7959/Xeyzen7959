@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <samp>computer engineering @ BINUS</samp>
+  <samp>i love building shit</samp>
 </p>
 
 <p align="center">
