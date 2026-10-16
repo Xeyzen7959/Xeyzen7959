@@ -14,7 +14,7 @@ Computer Engineering undergraduate at **BINUS University**. I work on embedded s
   <img src="assets/skills.svg" alt="C++, Python, TypeScript, React, Arduino, and Git" height="42" />
 </p>
 
-- **Languages:** C++, Python, TypeScript
+- **Languages:** C++, Python, JavaScript, TypeScript
 - **Web:** React
 - **Hardware:** Arduino, serial communication, sensor data
 - **Tools:** Git
