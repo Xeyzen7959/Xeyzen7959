@@ -38,7 +38,7 @@ Computer Engineering undergraduate at **BINUS University**. I work on embedded s
 }
 -->
 
-<img src="assets/commit-performance.svg?v=4e7bd6af5c74" alt="Monthly GitHub commit performance from April 2025 to today" width="100%" />
+<img src="assets/commit-performance-4e7bd6af5c74.svg" alt="Monthly GitHub commit performance from April 2025 to today" width="100%" />
 
 ### Connect with me
 
