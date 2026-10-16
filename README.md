@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://id.pinterest.com/pin/713609503446214482/">
+  <a href="https://pin.it/27pYIn5XO">
     <img src="assets/banner.gif" alt="Animated Japanese-style snake artwork" width="100%" />
   </a>
 </p>
