@@ -31,7 +31,7 @@ I build AI applications, computer vision projects, embedded systems, and tools f
 | **Operating systems** | Kali Linux |
 | **Version control** | Git · GitHub |
 
-### `Selected projects`
+### `Projects`
 
 <table>
 <tr>
