@@ -28,7 +28,7 @@ I build AI applications, computer vision projects, embedded systems, and tools f
 | **AI engineering** | AI applications · Computer vision · Facial recognition |
 | **Web & desktop** | React · Desktop tools · Data visualization |
 | **Embedded systems** | Arduino · ESP32 · Serial communication · Sensors |
-| **Operating systems** | Kali Linux |
+| **Operating systems** | MacOS / Kali Linux |
 | **Version control** | Git · GitHub |
 
 ### `Projects`
