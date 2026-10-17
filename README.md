@@ -1,32 +1,80 @@
 <p align="center">
-  <a href="https://id.pinterest.com/pin/654992339579021076/">
-    <img src="assets/dmc-banner.jpg" alt="Devil May Cry logo in red on a black background" width="100%" />
-  </a>
+  <img src="assets/profile-cover.gif" alt="Xeyzen7959 — AI Engineer and Software Developer. Animated crimson orbital artwork." width="100%" />
+</p>
+
+<p align="center">
+  <a href="#about">About</a> &nbsp;·&nbsp;
+  <a href="#core-skills">Core skills</a> &nbsp;·&nbsp;
+  <a href="#selected-projects">Projects</a> &nbsp;·&nbsp;
+  <a href="#connect-with-me">Connect</a>
 </p>
 
 ### About
 
-Computer Engineering undergraduate at **BINUS University**. I work on embedded systems, desktop tools, and web applications.
+**AI Engineer & Software Developer** studying Computer Engineering at **BINUS University**.
+
+I build AI applications, computer vision projects, embedded systems, and tools for the web and desktop.
 
 ### Core skills
 
 <p>
-  <img src="assets/skills.svg" alt="C++, Python, TypeScript, React, Arduino, and Git" height="42" />
+  <img src="assets/core-skills.svg" alt="Python, C#, C++, JavaScript, TypeScript, React, Arduino, and Git" height="44" />
 </p>
 
-- **Languages:** C++, Python, JavaScript, TypeScript
-- **Web:** React
-- **Hardware:** Arduino, serial communication, sensor data
-- **Tools:** Git
+| Area | Skills |
+| :--- | :--- |
+| **Languages** | Python · C# · C++ · JavaScript · TypeScript |
+| **AI engineering** | AI applications · Computer vision · Facial recognition |
+| **Web & desktop** | React · Desktop tools · Data visualization |
+| **Embedded systems** | Arduino · ESP32 · Serial communication · Sensors |
+| **Version control** | Git · GitHub |
 
-### Projects
+### Selected projects
 
-- **[SerialScope](https://github.com/Xeyzen7959/SerialScope)** — Arduino serial monitor with live sensor plots and data export.
-- **[RelayDesk](https://github.com/Xeyzen7959/Relay-Desk)** — Customer-support demo with simulated AI answers, knowledge-base citations, and human handoff.
-- **[ESPION](https://github.com/Xeyzen7959/ESPION)** — ESP-32 C++ based flipper zero alternative.
-- **[Automatic AI Attendance Taker](https://github.com/Xeyzen7959/Automatic-Ai-Attendance-Taker)** — AI Facial Recognition Attendance system project.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### @Xeyzen7959's commit performace
+**[Automatic AI Attendance Taker](https://github.com/Xeyzen7959/Automatic-Ai-Attendance-Taker)**
+
+AI facial recognition attendance system.
+
+`Computer vision` `C++`
+
+</td>
+<td width="50%" valign="top">
+
+**[ESPION](https://github.com/Xeyzen7959/ESPION)**
+
+ESP32-based alternative to the Flipper Zero.
+
+`Embedded systems` `C++`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[SerialScope](https://github.com/Xeyzen7959/SerialScope)**
+
+Arduino serial monitor with live sensor plots and data export.
+
+`Python` `Data visualization`
+
+</td>
+<td width="50%" valign="top">
+
+**[RelayDesk](https://github.com/Xeyzen7959/Relay-Desk)**
+
+Customer-support demo with simulated AI answers, citations, and human handoff.
+
+`React` `TypeScript`
+
+</td>
+</tr>
+</table>
+
+### Commit activity
 
 <!-- contribution-graph-config
 {
@@ -43,5 +91,5 @@ Computer Engineering undergraduate at **BINUS University**. I work on embedded s
 ### Connect with me
 
 <a href="https://discord.com/users/1007608268534849636">
-  <img src="https://img.shields.io/badge/Discord-%40gesneriana-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Connect with @gesneriana on Discord" />
+  <img src="https://img.shields.io/badge/Discord-%40gesneriana-7C3F50?style=for-the-badge&logo=discord&logoColor=white" alt="Connect with @gesneriana on Discord" />
 </a>
