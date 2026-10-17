@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="#about">About</a> &nbsp;·&nbsp;
-  <a href="#core-skills">Core skills</a> &nbsp;·&nbsp;
+  <a href="#tech-stack">Tech stack</a> &nbsp;·&nbsp;
   <a href="#selected-projects">Projects</a> &nbsp;·&nbsp;
   <a href="#connect-with-me">Connect</a>
 </p>
@@ -15,18 +15,19 @@
 
 I build AI applications, computer vision projects, embedded systems, and tools for the web and desktop.
 
-### `Core skills`
+### `Tech stack`
 
 <p>
-  <img src="assets/core-skills.svg" alt="Python, C#, C++, JavaScript, TypeScript, React, Arduino, and Git" height="44" />
+  <img src="assets/tech-stack.svg" alt="Python, C#, C++, JavaScript, TypeScript, React, Arduino, Linux, and Git" height="44" />
 </p>
 
-| Area | Skills |
+| Area | Technologies & focus |
 | :--- | :--- |
 | **Languages** | Python · C# · C++ · JavaScript · TypeScript |
 | **AI engineering** | AI applications · Computer vision · Facial recognition |
 | **Web & desktop** | React · Desktop tools · Data visualization |
 | **Embedded systems** | Arduino · ESP32 · Serial communication · Sensors |
+| **Operating systems** | Linux · Kali Linux |
 | **Version control** | Git · GitHub |
 
 ### `Selected projects`
