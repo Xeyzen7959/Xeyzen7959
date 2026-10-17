@@ -18,7 +18,8 @@ I build AI applications, computer vision projects, embedded systems, and tools f
 ### `Tech stack`
 
 <p>
-  <img src="assets/tech-stack.svg" alt="Python, C#, C++, JavaScript, TypeScript, React, Arduino, Linux, and Git" height="44" />
+  <img src="assets/tech-stack-tools.svg" alt="Python, C#, C++, JavaScript, TypeScript, React, Arduino, and Git" height="44" />
+  <img src="assets/kali-linux.svg" alt="Kali Linux" height="44" />
 </p>
 
 | Area | Technologies & focus |
@@ -27,7 +28,7 @@ I build AI applications, computer vision projects, embedded systems, and tools f
 | **AI engineering** | AI applications · Computer vision · Facial recognition |
 | **Web & desktop** | React · Desktop tools · Data visualization |
 | **Embedded systems** | Arduino · ESP32 · Serial communication · Sensors |
-| **Operating systems** | Linux · Kali Linux |
+| **Operating systems** | Kali Linux |
 | **Version control** | Git · GitHub |
 
 ### `Selected projects`
