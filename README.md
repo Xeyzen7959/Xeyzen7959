@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/profile-cover.gif" alt="Xeyzen7959 — AI Engineer and Software Developer. Animated crimson orbital artwork." width="100%" />
+  <img src="assets/profile-cover-mono.gif" alt="Xeyzen7959 — AI Engineer and Software Developer. Animated crimson orbital artwork." width="100%" />
 </p>
 
 <p align="center">
@@ -9,13 +9,13 @@
   <a href="#connect-with-me">Connect</a>
 </p>
 
-### About
+### `About`
 
 **AI Engineer & Software Developer** studying Computer Engineering at **BINUS University**.
 
 I build AI applications, computer vision projects, embedded systems, and tools for the web and desktop.
 
-### Core skills
+### `Core skills`
 
 <p>
   <img src="assets/core-skills.svg" alt="Python, C#, C++, JavaScript, TypeScript, React, Arduino, and Git" height="44" />
@@ -29,7 +29,7 @@ I build AI applications, computer vision projects, embedded systems, and tools f
 | **Embedded systems** | Arduino · ESP32 · Serial communication · Sensors |
 | **Version control** | Git · GitHub |
 
-### Selected projects
+### `Selected projects`
 
 <table>
 <tr>
@@ -74,7 +74,7 @@ Customer-support demo with simulated AI answers, citations, and human handoff.
 </tr>
 </table>
 
-### Commit activity
+### `Commit activity`
 
 <!-- contribution-graph-config
 {
@@ -88,7 +88,7 @@ Customer-support demo with simulated AI answers, citations, and human handoff.
 
 <img src="assets/commit-performance-46d9151519f7.svg" alt="Monthly GitHub commit performance from April 2025 to today" width="100%" />
 
-### Connect with me
+### `Connect with me`
 
 <a href="https://discord.com/users/1007608268534849636">
   <img src="https://img.shields.io/badge/Discord-%40gesneriana-7C3F50?style=for-the-badge&logo=discord&logoColor=white" alt="Connect with @gesneriana on Discord" />
