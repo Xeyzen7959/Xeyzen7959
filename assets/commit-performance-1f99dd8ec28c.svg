@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" role="img" aria-labelledby="title desc">
+<title id="title">GitHub performance — monthly commits</title>
+<desc id="desc">Commit activity for Xeyzen7959, 2025-04-16 through 2026-11-09. 932 commits across 359 active days.</desc>
+<defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ef4444" stop-opacity="0.30"/><stop offset="100%" stop-color="#ef4444" stop-opacity="0.01"/></linearGradient></defs>
+<rect x="1" y="1" width="898" height="438" rx="14" fill="#0d1117" stroke="#272d36"/>
+<g font-family="Arial,sans-serif" fill="#e6edf3">
+<text x="870" y="35" text-anchor="end" font-size="11" fill="#8b949e">Apr 2025 — Nov 2026</text>
+<rect x="30" y="60" width="260" height="84" rx="8" fill="#11161d"/>
+<text x="46" y="80" font-size="10" letter-spacing="1.2" fill="#8b949e">COMMITS</text>
+<text x="46" y="112" font-size="26" font-weight="600">932</text>
+<text x="46" y="131" font-size="10" fill="#8b949e">public + private</text>
+<rect x="320" y="60" width="260" height="84" rx="8" fill="#11161d"/>
+<text x="336" y="80" font-size="10" letter-spacing="1.2" fill="#8b949e">ACTIVE DAYS</text>
+<text x="336" y="112" font-size="26" font-weight="600">359</text>
+<text x="336" y="131" font-size="10" fill="#8b949e">days with commits</text>
+<rect x="610" y="60" width="260" height="84" rx="8" fill="#11161d"/>
+<text x="626" y="80" font-size="10" letter-spacing="1.2" fill="#8b949e">PEAK MONTH</text>
+<text x="626" y="112" font-size="26" font-weight="600">69</text>
+<text x="626" y="131" font-size="10" fill="#8b949e">2026-10</text>
+<text x="30" y="171" font-size="11" fill="#8b949e">Monthly commits</text>
+<path d="M65,369.0 H855" stroke="#242b34" stroke-dasharray="3 5"/>
+<text x="53" y="373.0" text-anchor="end" font-size="10" fill="#8b949e">0</text>
+<path d="M65,323.5 H855" stroke="#242b34" stroke-dasharray="3 5"/>
+<text x="53" y="327.5" text-anchor="end" font-size="10" fill="#8b949e">18</text>
+<path d="M65,278.0 H855" stroke="#242b34" stroke-dasharray="3 5"/>
+<text x="53" y="282.0" text-anchor="end" font-size="10" fill="#8b949e">36</text>
+<path d="M65,232.5 H855" stroke="#242b34" stroke-dasharray="3 5"/>
+<text x="53" y="236.5" text-anchor="end" font-size="10" fill="#8b949e">54</text>
+<path d="M65,187.0 H855" stroke="#242b34" stroke-dasharray="3 5"/>
+<text x="53" y="191.0" text-anchor="end" font-size="10" fill="#8b949e">72</text>
+<path d="M65.00,303.28 L106.58,272.94 L148.16,285.58 L189.74,229.97 L231.32,219.86 L272.89,232.50 L314.47,252.72 L356.05,242.61 L397.63,219.86 L439.21,227.44 L480.79,295.69 L522.37,240.08 L563.95,288.11 L605.53,224.92 L647.11,219.86 L688.68,242.61 L730.26,227.44 L771.84,235.03 L813.42,194.58 L855.00,369.00 L855,369 L65,369 Z" fill="url(#fill)"/>
+<path d="M65.00,303.28 L106.58,272.94 L148.16,285.58 L189.74,229.97 L231.32,219.86 L272.89,232.50 L314.47,252.72 L356.05,242.61 L397.63,219.86 L439.21,227.44 L480.79,295.69 L522.37,240.08 L563.95,288.11 L605.53,224.92 L647.11,219.86 L688.68,242.61 L730.26,227.44 L771.84,235.03 L813.42,194.58 L855.00,369.00" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="65.00" cy="303.28" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2025-04: 26 commits</title></circle>
+<circle cx="106.58" cy="272.94" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2025-05: 38 commits</title></circle>
+<circle cx="148.16" cy="285.58" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2025-06: 33 commits</title></circle>
+<circle cx="189.74" cy="229.97" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2025-07: 55 commits</title></circle>
+<circle cx="231.32" cy="219.86" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2025-08: 59 commits</title></circle>
+<circle cx="272.89" cy="232.50" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2025-09: 54 commits</title></circle>
+<circle cx="314.47" cy="252.72" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2025-10: 46 commits</title></circle>
+<circle cx="356.05" cy="242.61" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2025-11: 50 commits</title></circle>
+<circle cx="397.63" cy="219.86" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2025-12: 59 commits</title></circle>
+<circle cx="439.21" cy="227.44" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2026-01: 56 commits</title></circle>
+<circle cx="480.79" cy="295.69" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2026-02: 29 commits</title></circle>
+<circle cx="522.37" cy="240.08" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2026-03: 51 commits</title></circle>
+<circle cx="563.95" cy="288.11" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2026-04: 32 commits</title></circle>
+<circle cx="605.53" cy="224.92" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2026-05: 57 commits</title></circle>
+<circle cx="647.11" cy="219.86" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2026-06: 59 commits</title></circle>
+<circle cx="688.68" cy="242.61" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2026-07: 50 commits</title></circle>
+<circle cx="730.26" cy="227.44" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2026-08: 56 commits</title></circle>
+<circle cx="771.84" cy="235.03" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2026-09: 53 commits</title></circle>
+<circle cx="813.42" cy="194.58" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2026-10: 69 commits</title></circle>
+<circle cx="855.00" cy="369.00" r="3" fill="#ef4444" stroke="#0d1117" stroke-width="1"><title>2026-11: 0 commits</title></circle>
+<text x="65.0" y="392" text-anchor="middle" font-size="10" fill="#8b949e">Apr 2025</text>
+<text x="439.2105263157895" y="392" text-anchor="middle" font-size="10" fill="#8b949e">Jan 2026</text>
+<text x="855.0" y="392" text-anchor="middle" font-size="10" fill="#8b949e">Nov 2026</text>
+<text x="30" y="423" font-size="10" fill="#8b949e">Source: GitHub commit contributions · updated 2026-11-09</text></g></svg>
