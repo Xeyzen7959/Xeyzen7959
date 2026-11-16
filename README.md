@@ -88,7 +88,7 @@ Customer-support demo with simulated AI answers, citations, and human handoff.
 }
 -->
 
-<img src="assets/commit-performance-3030c6d31a8c.svg" alt="Monthly GitHub commit performance from April 2025 to today" width="100%" />
+<img src="assets/commit-performance-5b8c573cd190.svg" alt="Monthly GitHub commit performance from April 2025 to today" width="100%" />
 
 ### `Connect with me`
 
